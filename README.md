@@ -1,6 +1,7 @@
 # React-shop-cloudfront
 
 CloudFront URL https://djwaxzteoj9k4.cloudfront.net/
+S3 URL http://kavi-shop-bucket.s3-website.eu-central-1.amazonaws.com/
 
 This is frontend starter project for nodejs-aws mentoring program. It uses the following technologies:
 
