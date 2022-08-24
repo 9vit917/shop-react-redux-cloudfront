@@ -6,9 +6,11 @@ import { Order } from "~/models/Order";
 import { AvailableProduct, Product } from "~/models/Product";
 
 export const handlers = [
-  rest.get(`${API_PATHS.bff}/product`, (req, res, ctx) => {
-    return res(ctx.status(200), ctx.delay(), ctx.json<Product[]>(products));
-  }),
+//   rest.get(`${API_PATHS.bff}/product`, (req, res, ctx) => {
+// 	  console.log(res)
+// 	  console.log(123231)
+//     return res(ctx.status(200), ctx.delay(), ctx.json<Product[]>(products));
+//   }),
   rest.put(`${API_PATHS.bff}/product`, (req, res, ctx) => {
     return res(ctx.status(200));
   }),
@@ -34,7 +36,8 @@ export const handlers = [
     );
   }),
   rest.get(`${API_PATHS.cart}/profile/cart`, (req, res, ctx) => {
-    return res(ctx.status(200), ctx.delay(), ctx.json<CartItem[]>(cart));
+	console.log("cart")
+	return res(ctx.status(200), ctx.delay(), ctx.json<CartItem[]>(cart));
   }),
   rest.put(`${API_PATHS.cart}/profile/cart`, (req, res, ctx) => {
     return res(ctx.status(200));
